@@ -1,0 +1,47 @@
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  min-width: 300px;
+  max-width: 500px;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.notification__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notification__text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.notification__text {
+  font-size: 12px;
+  color: #999;
+}
+
+.notification__view {
+  margin-right: 10px;
+}
+
+.notification__date {
+  font-style: italic;
+}
